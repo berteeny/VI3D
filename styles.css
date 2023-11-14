@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  color: #383838;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #383838;
+}
+
+h1,
+h2 {
+  font-family: "Exo", sans-serif;
+}
+
+.icon {
+  margin-right: 0.25rem;
+}
+
+.container {
+  display: flex;
+}
+
+/* header */
+.layer {
+  height: 5.5rem;
+}
+
+#header {
+  height: 5.5rem;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.header-logo {
+  height: 4rem;
+  margin-left: 4rem;
+}
+
+.contact {
+  width: 30rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+/* title */
+.title {
+  height: 35rem;
+  background-image: url("./assets/images/bckgrnd2.png");
+  background-size: 100% 100%;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  height: 17rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.edge {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+/* vis Inspection */
+
+.visInspection {
+  display: flex;
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 3rem;
+}
+
+.visLeft {
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sSeries {
+  height: 60%;
+  padding-top: 5rem;
+}
+
+.visRight {
+  width: 50%;
+  padding-left: 2rem;
+}
+
+h2 {
+  padding-top: 5rem;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.visP {
+  padding-right: 10rem;
+  margin-top: 4rem;
+}
+
+.robot {
+  font-family: "Exo", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.caption {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* con design */
+
+.conDesign {
+  background: url("./assets/images/mark.svg") no-repeat,
+    linear-gradient(110deg, rgba(0, 0, 0, 0.17) 0, #420000 100%);
+  background-position: right;
+  /* background-color: #ed1c24; */
+  /* background: url("./assets/images/mark.svg") no-repeat,
+    linear-gradient(110deg, rgba(0, 0, 0, 0.17) 0, #420000 100%);
+  background-position: right;
+  background-color: #ed1c24; */
+  height: 40rem;
+}
+
+.conLeft {
+  width: 50%;
+  color: #181818;
+  text-align: end;
+  padding-right: 2rem;
+}
+
+.conP {
+  padding-left: 10rem;
+  margin: 3.5rem 0;
+}
+
+.conRight {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conImg {
+  height: 50%;
+  padding-bottom: 10rem;
+}
+
+.conImg2 {
+  height: 9rem;
+}
+
+/* contact us */
+
+.contactUsR {
+  width: 30%;
+  height: 20rem;
+  background-color: #080808;
+  /* filter: brightness(50%); */
+  align-items: center;
+  justify-content: center;
+}
+
+.contactLogo {
+  height: 30%;
+}
+
+.contactUsM {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 20rem;
+  width: 70%;
+  text-align: center;
+  background-image: url("./assets/images/dotgrey.png");
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-color: #080808;
+  /* filter: brightness(50%); */
+  color: #fff;
+}
+
+.contactHeader {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.contactInfo {
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #282828;
+  height: 1rem;
+  text-align: start;
+  padding: 0.5rem 3rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
