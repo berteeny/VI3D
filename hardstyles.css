@@ -1,0 +1,165 @@
+/* top section */
+body {
+  overflow-x: hidden;
+}
+
+.hardwares {
+  width: 100%;
+  height: 20rem;
+  gap: 4rem;
+}
+
+.hardwareL {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+  padding-bottom: 3rem;
+}
+
+.hardwareL p {
+  margin: 0;
+}
+
+.hardwareR {
+  width: 50%;
+  font-size: 0.85rem;
+  align-items: end;
+  padding-bottom: 4.5rem;
+}
+
+.hardwareR p {
+  width: 80%;
+}
+
+/* series' */
+
+.name {
+  height: 8rem;
+  width: 100%;
+  background-color: #606060;
+  font-size: 4rem;
+  padding: 0.75rem 0rem 0rem 2rem;
+}
+
+.n2 {
+  background-color: #b0b0b0 !important;
+}
+
+.series {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 7rem 0rem;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  width: 416px;
+  height: 292px;
+  background-color: #fff;
+  justify-content: start;
+  padding: 30px;
+}
+
+.info {
+  width: 416px;
+  height: 292px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.R {
+  align-items: start;
+}
+
+.L {
+  align-items: end;
+}
+
+h2 {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.img {
+  width: 476px;
+  height: 272px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 476px;
+  height: 272px;
+}
+
+/* backgrounds */
+
+.m {
+  width: 100%;
+  height: 60rem;
+  gap: 5rem;
+  background-image: url("./assets/images/dotgrey.png");
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-color: #d0d0d0;
+}
+
+.s {
+  height: 60rem;
+  width: 100%;
+  gap: 5rem;
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.17) 0, #420000 100%);
+  background-size: 100%;
+  background-position: left;
+}
+
+.r {
+  height: 60rem;
+  width: 100%;
+  gap: 5rem;
+  background-image: url("./assets/images/vdarkr.png");
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  background-position-y: center;
+  background-color: #282828;
+}
+
+@media screen and (max-width: 1230px) {
+  .m,
+  .s,
+  .r {
+    height: 100rem;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .series {
+    padding: 2rem 0rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .series {
+    width:fit-content;
+
+  }
+}

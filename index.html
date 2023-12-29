@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VI3D Labs Inc</title>
     <link rel="icon" href="./assets/images/vLogo.png" />
@@ -18,28 +19,56 @@
       href="https://fonts.googleapis.com/css2?family=Exo:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/images/font/MyFontsWebfontsKit.css"
+    />
   </head>
   <body>
     <header>
       <div class="container" id="header">
         <div class="container logo">
           <a href="index.html"
-            ><img class="header-logo" src="./assets/images/vi3dLogo.png"
+            ><img
+              class="header-logo"
+              src="./assets/images/vi3dLogo.png"
+              alt="VI3D Labs logo"
           /></a>
         </div>
         <div class="container contact">
           <div class="container" id="email">
-            <img class="icon" src="./assets/images/envelope.svg" /><a
-              >sales@vi3dlabs.com</a
-            >
+            <img
+              class="icon"
+              src="./assets/images/envelope.svg"
+              alt="email icon"
+            /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
           </div>
           <div class="container" id="number">
-            <img class="icon" src="./assets/images/telephone.svg" /><a
-              >(778) 679-4089</a
-            >
+            <img
+              class="icon"
+              src="./assets/images/telephone.svg"
+              alt="telephone icon"
+            /><a>(778) 679-4089</a>
           </div>
-          <div>
-            <a href="./softwares.html">Menu</a>
+          <div class="container" id="menu">
+            <ul class="menu robot container">
+              <li><a class="menuItem" href="./index.html">Home</a></li>
+              <li>
+                <a class="menuItem" href="./softwares.html">Softwares</a>
+              </li>
+              <li>
+                <a class="menuItem" href="./hardwares.html">Hardwares</a>
+              </li>
+              <li>
+                <a class="menuItem" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <button class="hamburger">
+              <span class="menuIcon">Menu</span>
+              <img class="closeIcon" src="./assets/images/close.svg" />
+            </button>
+            <div id="overlay"></div>
           </div>
         </div>
       </div>
@@ -53,7 +82,11 @@
     </div>
     <div class="visInspection container">
       <div class="visLeft container">
-        <img class="sSeries" src="./assets/images/sSeries.jpeg" />
+        <img
+          class="sSeries"
+          src="./assets/images/sSeries.jpeg"
+          alt="EdgeSpec S Series scanner"
+        />
         <p class="robot caption">EdgeSpec S Series</p>
       </div>
       <div class="visRight">
@@ -99,11 +132,54 @@
             The EdgeSpec software solution provides fast and easy access to your
             data and results.
           </p>
-          <img class="conImg2" src="./assets/images/conDesign.jpeg" />
+          <img
+            class="conImg2"
+            src="./assets/images/conDesign.jpeg"
+            alt="3D scan software"
+          />
         </div>
       </div>
       <div class="conRight">
-        <img class="conImg" src="./assets/images/scanner2.png" />
+        <img
+          class="conImg"
+          src="./assets/images/scanner2.png"
+          alt="S Series scanner and control panel"
+        />
+      </div>
+    </div>
+    <div class="customApp container">
+      <div class="customL container">
+        <div><h2>Custom Applications</h2></div>
+        <div>
+          <h3>
+            PRELIMINARY REMOTE SCANNER CONCEPT FOR NUCLEAR STEAM GENERATOR
+          </h3>
+        </div>
+        <div>
+          <p>
+            An initial concept for a remote scanner to be used for lifecycle
+            studies in the maintenance of nuclear steam generators.
+            <br />
+            <br />
+            As we finalize our system, we look forward to opportunities to
+            discuss custom solutions to assist with your visual inspection
+            challenges.
+          </p>
+        </div>
+      </div>
+      <div class="customR container">
+        <div><h2 class="nsg robot">NSG Remote Concept</h2></div>
+        <div class="video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/3pEZzgsyf5I?si=q_XRTFqKD3pfvUVv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
     <div class="contactUs container">
@@ -117,7 +193,11 @@
         </div>
       </div>
       <div class="contactUsR container">
-        <img class="contactLogo" src="./assets/images/vLogo.png" />
+        <img
+          class="contactLogo"
+          src="./assets/images/vLogo.png"
+          alt="VI3D Labs logo"
+        />
       </div>
     </div>
     <footer class="robot">COPYRIGHT © 2023 - VI3D LABS INC.</footer>
