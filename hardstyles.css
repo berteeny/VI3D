@@ -151,6 +151,8 @@ h2 {
     justify-content: center;
   }
 
+  
+
   .series {
     padding: 2rem 0rem;
     width: auto;
@@ -158,8 +160,65 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .series {
-    width:fit-content;
 
+  .m, .s, .r {
+    align-items: center;
+  }
+
+  .s .specs {
+    height: 220px;
+  }
+
+  .info p {
+    font-size: 0.65rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .list {
+    font-size: 0.75rem;
+  }
+
+  .hardwareR p {
+    font-size: 0.85rem;
+  }
+
+  .hardwareL p {
+    font-size: 1.25rem;
+  }
+
+  .hardwareL {
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .specs, .info {
+    height: fit-content;
+    width: 300px;
+  }
+
+  .video {
+    width: 360px;
+    height: 200px;
+  }
+
+  .img {
+    width: 360px;
+    height: 225px;
+  }
+
+  .r, .s, .m {
+    height: fit-content;
+  }
+
+  .name {
+    font-size: 3rem;
+    height: 6rem;
+  }
+
+  .contactLogo {
+    display: none;
   }
 }

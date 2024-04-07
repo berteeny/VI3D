@@ -135,4 +135,60 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+  .softL p {
+    font-size: 1.4rem;
+  }
+
+  .softwares {
+  height: 16rem;
+}
+
+  .softL, .softR {
+    padding-bottom: 2rem;
+    align-items: end;
+  }
+
+  .softR p {
+    font-size: 0.75rem;
+  }
+
+  .mainTxt {
+    height: fit-content;
+    width: 360px;
+  }
+
+  .mainTxt p {
+    font-size: 0.75rem;
+  }
+
+  .mainTxt h2 {
+    font-size: 1.25rem;
+  }
+
+  .mainCol {
+    width: 100%;
+    align-items: center;
+  }
+
+  .video, .mainImg, .mainImg Img {
+    width: 360px;
+    height: 200px;
+  }
+
+  .softMain, .softExamples {
+    height: fit-content;
+  }
+
+  .contactLogo {
+    display: none;
+  }
+
+  .fabric h2 {
+    font-size: 1.75rem;
+  }
+
+  .video iframe {
+    width: 360px;
+    height: 200px;
+  }
 }
