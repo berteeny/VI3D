@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hardwares</title>
-    <link rel="icon" href="./assets/images/vLogo.png" />
-    <link rel="icon" href="./assets/images/vLogo.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="hardstyles.css" />
+    <link rel="icon" type="img" href="./assets/images/vLogo.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="hardstyles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,44 +32,63 @@
         <div class="container logo">
           <a href="index.html"
             ><img
+              type="img"
               class="header-logo"
               src="./assets/images/vi3dLogo.png"
               alt="VI3D Labs logo"
           /></a>
         </div>
-        <div class="container contact">
-          <div class="tooltip"><span class="tooltiptext">Greyscale</span><input type="checkbox" id="unchecked" class="cbx hidden"/>
-            <label for="unchecked" class="lbl"></label></div>
-          <div class="container" id="email">
+        <div role="menubar" class="container contact">
+          <div class="tooltip">
+            <span class="tooltiptext">Greyscale</span
+            ><input type="checkbox" id="unchecked" class="cbx hidden" />
+            <label for="unchecked" class="lbl"></label>
+          </div>
+          <div role="menuitem" class="container" id="email">
             <img
+              type="img"
               class="icon"
               src="./assets/images/envelope.svg"
               alt="email icon"
             /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
           </div>
-          <div class="container" id="number">
+          <div role="menuitem" class="container" id="number">
             <img
+              type="img"
               class="icon"
               src="./assets/images/telephone.svg"
               alt="telephone icon"
             /><a>(778) 679-4089</a>
           </div>
           <div class="container" id="menu">
-            <ul class="menu robot container">
-              <li><a class="menuItem" href="./index.html">Home</a></li>
-              <li>
-                <a class="menuItem" href="./softwares.html">Softwares</a>
+            <ul role="menubar" class="menu robot container">
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./index.html">Home</a>
               </li>
-              <li>
-                <a class="menuItem" href="./hardwares.html">Hardwares</a>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./softwares.html"
+                  >Softwares</a
+                >
               </li>
-              <li>
-                <a class="menuItem" href="./contact.html">Contact</a>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./hardwares.html"
+                  >Hardwares</a
+                >
+              </li>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
             <button class="hamburger">
               <span class="menuIcon">Menu</span>
-              <img class="closeIcon" src="./assets/images/close.svg" />
+              <img
+                type="img"
+                class="closeIcon"
+                src="./assets/images/close.svg"
+                alt="menu open and close icon"
+              />
             </button>
             <div id="overlay"></div>
           </div>
@@ -78,199 +96,204 @@
       </div>
     </header>
     <div id="main">
-    <div class="hardwares container">
-      <div class="hardwareL container">
-        <p class="robot">
-          VI3D Systems
-          <br />
-          Universal Inspection Tools
-        </p>
-      </div>
-      <div class="hardwareR container">
-        <p>
-          The EdgeSpec 3D has an assortment of different tools to provide a fast
-          and intuitive means of assessing the scanned object.
-        </p>
-      </div>
-    </div>
-    <div class="name robot">M Series</div>
-    <div class="m container">
-      <div class="L series">
-        <div class="img">
-          <img
-            src="./assets/images/mSeriesR.png"
-            alt="EdgeSpec M Series scanner"
-          />
+      <div class="hardwares container">
+        <div class="hardwareL container">
+          <p class="robot">
+            VI3D Systems
+            <br />
+            Universal Inspection Tools
+          </p>
         </div>
-        <div class="specs">
-          <h2>Solution Specifications</h2>
-          <ul class="list">
-            <li>EdgeSpec M1-95-165-BD</li>
-            <li>High Resolution HD Camera</li>
-            <li>Diameter: 95mm (3 3/4in)</li>
-            <li>Working Range: 150mm to 400mm (6in to 15in)</li>
-            <li>Length: 165mm (6 1/2in)</li>
-            <li>Variable lighting control</li>
-            <li>Maximum Cable Length is 9m (30ft)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="R series">
-        <div class="img">
-          <img
-            src="./assets/images/mSeriesB.png"
-            alt="EdgeSpec M Series scanner"
-          />
-        </div>
-        <div class="info">
+        <div class="hardwareR container">
           <p>
-            This solution takes into account that customer driven applications
-            generally have specific requirements. The EdgeSpec M Series is
-            designed to be a universal inspection tool. Given its minimal space
-            requirements, the scanner can easily be incorporated into any new
-            tooling manipulator without the need for any formal integration. The
-            system requires no calibration and can simply be placed on any
-            manipulator of choice to begin scanning.
-            <br />
-            <br />
-            Individual scans can be combined automatically to create a larger
-            area scan of any space with our proprietary algorithms.
+            The EdgeSpec 3D has an assortment of different tools to provide a
+            fast and intuitive means of assessing the scanned object.
           </p>
         </div>
       </div>
-    </div>
-    <div class="name n2 robot">S Series</div>
-    <div class="s container">
-      <div class="L series">
-        <div class="img">
-          <img
-            src="./assets/images/sSeries.jpeg"
-            alt="EdgeSpec S Series scanner"
-          />
+      <div class="name robot">M Series</div>
+      <div class="m container">
+        <div class="L series">
+          <div class="img">
+            <img
+              type="img"
+              src="./assets/images/mSeriesR.png"
+              alt="EdgeSpec M Series scanner"
+            />
+          </div>
+          <div class="specs">
+            <h2>Solution Specifications</h2>
+            <ul class="list">
+              <li>EdgeSpec M1-95-165-BD</li>
+              <li>High Resolution HD Camera</li>
+              <li>Diameter: 95mm (3 3/4in)</li>
+              <li>Working Range: 150mm to 400mm (6in to 15in)</li>
+              <li>Length: 165mm (6 1/2in)</li>
+              <li>Variable lighting control</li>
+              <li>Maximum Cable Length is 9m (30ft)</li>
+            </ul>
+          </div>
         </div>
-        <div class="specs">
-          <h2>Solution Specifications</h2>
-          <ul class="list">
-            <li>EdgeSpec S1-95-315-BD</li>
-            <li>High Resolution HD Camera</li>
-            <li>
-              Overall Size (LxWxH): 318 mm x 153 mm x <br />130 mm (12 1/2in x
-              6in x 5in)
-            </li>
-            <li>
-              Lower Diameter x Length: 95mm x 203 mm <br />(3 3/4in x 8in)
-            </li>
-            <li>Working Range: 150mm to 400mm (6in to 15in)</li>
-            <li>Variable lighting control</li>
-            <li>Maximum Cable Length is 9m (30ft)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="R series">
-        <div class="video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/HdZWqJYHiTA?si=f3z9b5ZPyK76Julc"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="info">
-          <p>
-            The EdgeSpec S Series is designed with a minimum diameter and
-            incorporates a failsafe housing to mitigate any potential
-            introduction of unwanted foreign material. The system requires no
-            calibration and can simply be place in any separator to begin
-            scanning.
-            <br />
-            <br />
-            This solution allows for easy installation and inspection of steam
-            separators.
-            <br />
-            <br />
-            Individual scans can be combined to create a larger area scan of any
-            steam generator with our proprietary algorithms.
-          </p>
+        <div class="R series">
+          <div class="img">
+            <img
+              type="img"
+              src="./assets/images/mSeriesB.png"
+              alt="EdgeSpec M Series scanner"
+            />
+          </div>
+          <div class="info">
+            <p>
+              This solution takes into account that customer driven applications
+              generally have specific requirements. The EdgeSpec M Series is
+              designed to be a universal inspection tool. Given its minimal
+              space requirements, the scanner can easily be incorporated into
+              any new tooling manipulator without the need for any formal
+              integration. The system requires no calibration and can simply be
+              placed on any manipulator of choice to begin scanning.
+              <br />
+              <br />
+              Individual scans can be combined automatically to create a larger
+              area scan of any space with our proprietary algorithms.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="name robot">R Series</div>
-    <div class="r container">
-      <div class="L series">
-        <div class="img">
-          <img
-            src="./assets/images/rSeries.jpg"
-            alt="EdgeSpec R Series scanner"
-          />
+      <div class="name n2 robot">S Series</div>
+      <div class="s container">
+        <div class="L series">
+          <div class="img">
+            <img
+              type="img"
+              src="./assets/images/sSeries.jpeg"
+              alt="EdgeSpec S Series scanner"
+            />
+          </div>
+          <div class="specs">
+            <h2>Solution Specifications</h2>
+            <ul class="list">
+              <li>EdgeSpec S1-95-315-BD</li>
+              <li>High Resolution HD Camera</li>
+              <li>
+                Overall Size (LxWxH): 318 mm x 153 mm x <br />130 mm (12 1/2in x
+                6in x 5in)
+              </li>
+              <li>
+                Lower Diameter x Length: 95mm x 203 mm <br />(3 3/4in x 8in)
+              </li>
+              <li>Working Range: 150mm to 400mm (6in to 15in)</li>
+              <li>Variable lighting control</li>
+              <li>Maximum Cable Length is 9m (30ft)</li>
+            </ul>
+          </div>
         </div>
-        <div class="specs">
-          <h2>Solution Specifications</h2>
-          <ul class="list">
-            <li>EdgeSpec R1-120-290-BD</li>
-            <li>High Resolution HD Camera</li>
-            <li>Width: 120mm (4 3/4in)</li>
-            <li>Working Range: 100mm to 390mm (4in to <br />15 1/4in)</li>
-            <li>Length: 290mm (11 1/2in)</li>
-            <li>Variable lighting control</li>
-            <li>Maximum Cable Length is 9m (30ft)</li>
-          </ul>
+        <div class="R series">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/HdZWqJYHiTA?si=f3z9b5ZPyK76Julc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="info">
+            <p>
+              The EdgeSpec S Series is designed with a minimum diameter and
+              incorporates a failsafe housing to mitigate any potential
+              introduction of unwanted foreign material. The system requires no
+              calibration and can simply be place in any separator to begin
+              scanning.
+              <br />
+              <br />
+              This solution allows for easy installation and inspection of steam
+              separators.
+              <br />
+              <br />
+              Individual scans can be combined to create a larger area scan of
+              any steam generator with our proprietary algorithms.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="R series">
-        <div class="video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/4pQRzGIa6-c?si=LMoNVRkAzLiPe3ZC"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+      <div class="name robot">R Series</div>
+      <div class="r container">
+        <div class="L series">
+          <div class="img">
+            <img
+              type="img"
+              src="./assets/images/rSeries.jpg"
+              alt="EdgeSpec R Series scanner"
+            />
+          </div>
+          <div class="specs">
+            <h2>Solution Specifications</h2>
+            <ul class="list">
+              <li>EdgeSpec R1-120-290-BD</li>
+              <li>High Resolution HD Camera</li>
+              <li>Width: 120mm (4 3/4in)</li>
+              <li>Working Range: 100mm to 390mm (4in to <br />15 1/4in)</li>
+              <li>Length: 290mm (11 1/2in)</li>
+              <li>Variable lighting control</li>
+              <li>Maximum Cable Length is 9m (30ft)</li>
+            </ul>
+          </div>
         </div>
-        <div class="info">
-          <p>
-            The EdgeSpec R Series has been designed to provide an option for
-            industrial applications where a means of assessing surface integrity
-            of various different surfaces such as roads and airport runways is
-            required.
-            <br />
-            <br />
-            The EdgeSpec R Series is designed to function as a mobile
-            acquisition solution. This solution can be easily adapted to any
-            fixed point on a vehicle, track or rail and can be used to collect
-            accurate repeatable data without the need of constant distance
-            measuring information (DMI). The system requires no calibration and
-            can simply be placed on the vehicle of choice to begin data
-            acquisition. The system can aquire data at long and short
-            wavelengths for IRI and texture assessments.
-          </p>
+        <div class="R series">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/4pQRzGIa6-c?si=LMoNVRkAzLiPe3ZC"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="info">
+            <p>
+              The EdgeSpec R Series has been designed to provide an option for
+              industrial applications where a means of assessing surface
+              integrity of various different surfaces such as roads and airport
+              runways is required.
+              <br />
+              <br />
+              The EdgeSpec R Series is designed to function as a mobile
+              acquisition solution. This solution can be easily adapted to any
+              fixed point on a vehicle, track or rail and can be used to collect
+              accurate repeatable data without the need of constant distance
+              measuring information (DMI). The system requires no calibration
+              and can simply be placed on the vehicle of choice to begin data
+              acquisition. The system can aquire data at long and short
+              wavelengths for IRI and texture assessments.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="contactUs container">
-      <div class="contactUsM container">
-        <div class="contactHeader robot">Contact VI3D Labs</div>
-        <div class="contactInfo">
-          sales@vi3dlabs.com
-          <br />
-          <br />
-          (778) 679-4089
+      <div class="contactUs container">
+        <div class="contactUsM container">
+          <div class="contactHeader robot">Contact VI3D Labs</div>
+          <div class="contactInfo">
+            sales@vi3dlabs.com
+            <br />
+            <br />
+            (778) 679-4089
+          </div>
+        </div>
+        <div class="contactUsR container">
+          <img
+            type="img"
+            class="contactLogo"
+            src="./assets/images/vLogo.png"
+            alt="VI3D Labs logo"
+          />
         </div>
       </div>
-      <div class="contactUsR container">
-        <img
-          class="contactLogo"
-          src="./assets/images/vLogo.png"
-          alt="VI3D Labs logo"
-        />
-      </div>
     </div>
-  </div>
     <footer class="robot">COPYRIGHT © 2023 - VI3D LABS INC.</footer>
     <script src="index.js"></script>
   </body>
