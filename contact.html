@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="icon" href="./assets/images/vLogo.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="img" href="./assets/images/vLogo.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,44 +31,63 @@
         <div class="container logo">
           <a href="index.html"
             ><img
+              type="img"
               class="header-logo"
               src="./assets/images/vi3dLogo.png"
               alt="VI3D Labs logo"
           /></a>
         </div>
-        <div class="container contact">
-          <div class="tooltip"><span class="tooltiptext">Greyscale</span><input type="checkbox" id="unchecked" class="cbx hidden"/>
-          <label for="unchecked" class="lbl"></label></div>
-          <div class="container" id="email">
+        <div role="menubar" class="container contact">
+          <div class="tooltip">
+            <span class="tooltiptext">Greyscale</span
+            ><input type="checkbox" id="unchecked" class="cbx hidden" />
+            <label for="unchecked" class="lbl"></label>
+          </div>
+          <div role="menuitem" class="container" id="email">
             <img
+              type="img"
               class="icon"
               src="./assets/images/envelope.svg"
               alt="email icon"
             /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
           </div>
-          <div class="container" id="number">
+          <div role="menuitem" class="container" id="number">
             <img
+              type="img"
               class="icon"
               src="./assets/images/telephone.svg"
               alt="telephone icon"
             /><a>(778) 679-4089</a>
           </div>
           <div class="container" id="menu">
-            <ul class="menu robot container">
-              <li><a class="menuItem" href="./index.html">Home</a></li>
-              <li>
-                <a class="menuItem" href="./softwares.html">Softwares</a>
+            <ul role="menubar" class="menu robot container">
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./index.html">Home</a>
               </li>
-              <li>
-                <a class="menuItem" href="./hardwares.html">Hardwares</a>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./softwares.html"
+                  >Softwares</a
+                >
               </li>
-              <li>
-                <a class="menuItem" href="./contact.html">Contact</a>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./hardwares.html"
+                  >Hardwares</a
+                >
+              </li>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="./contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
             <button class="hamburger">
               <span class="menuIcon">Menu</span>
-              <img class="closeIcon" src="./assets/images/close.svg" />
+              <img
+                type="img"
+                class="closeIcon"
+                src="./assets/images/close.svg"
+                alt="menu open and close icon"
+              />
             </button>
             <div id="overlay"></div>
           </div>
@@ -77,32 +96,39 @@
       <div class="layer"></div>
     </header>
     <div id="main">
-    <div class="contactPage container">
-      <div class="contactBlurb">
-        <h2>Contact Us</h2>
-        <div class="container" id="email">
-          <img
-            class="icon"
-            src="./assets/images/envelope.svg"
-            alt="email icon"
-          /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
-        </div>
-        <div class="container" id="number">
-          <img
-            class="icon"
-            src="./assets/images/telephone.svg"
-            alt="telephone icon"
-          /><a>(778) 679-4089</a>
-        </div>
-        <div class="container" id="linkedin">
-          <img class="icon" src="./assets/images/in.png" alt="LinkedIn logo" />
-          <a href="https://ca.linkedin.com/company/vi3d-labs-inc"
-            >VI3D Labs Inc</a
-          >
+      <div class="contactPage container">
+        <div class="contactBlurb">
+          <h2>Contact Us</h2>
+          <div class="container" id="contactEmail">
+            <img
+              type="img"
+              class="icon"
+              src="./assets/images/envelope.svg"
+              alt="email icon"
+            /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
+          </div>
+          <div class="container" id="contactNumber">
+            <img
+              type="img"
+              class="icon"
+              src="./assets/images/telephone.svg"
+              alt="telephone icon"
+            /><a>(778) 679-4089</a>
+          </div>
+          <div class="container" id="linkedin">
+            <img
+              type="img"
+              class="icon"
+              src="./assets/images/in.png"
+              alt="LinkedIn logo"
+            />
+            <a href="https://ca.linkedin.com/company/vi3d-labs-inc"
+              >VI3D Labs Inc</a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <footer class="robot">COPYRIGHT © 2023 - VI3D LABS INC.</footer>
     <script src="index.js"></script>
   </body>
