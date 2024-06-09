@@ -11,11 +11,11 @@ function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
+    menuIcon.style.display = "inline";
     overlay.classList.remove("on");
   } else {
     menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
+    closeIcon.style.display = "inline";
     menuIcon.style.display = "none";
     overlay.classList.add("on");
   }
