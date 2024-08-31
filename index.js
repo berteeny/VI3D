@@ -7,6 +7,7 @@ const overlay = document.querySelector("#overlay");
 const greyTog = document.querySelector(".cbx");
 const page = document.querySelector("body");
 
+//opens and closes sidebar menu
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -21,6 +22,7 @@ function toggleMenu() {
   }
 }
 
+//closes sidebar menu
 function closeMenu() {
   menu.classList.remove("showMenu");
   closeIcon.style.display = "none";
@@ -28,6 +30,7 @@ function closeMenu() {
   overlay.classList.remove("on");
 }
 
+// closes sidebar menu on click outside of sidebar menu
 window.addEventListener("click", (e) => {
   if (menu.classList.contains("showMenu")) {
     if (e.target === overlay) {
@@ -36,12 +39,26 @@ window.addEventListener("click", (e) => {
   }
 });
 
+// closes sidebar menu on "Escape" keypress and removes focus from menu button
+window.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (menu.classList.contains("showMenu")) {
+    if (e.code === "Escape") {
+      closeMenu();
+      hamburger.blur();
+    }
+  }
+});
+
+//toggles menu open/close on click of menu button
 hamburger.addEventListener("click", toggleMenu);
 
+//closes sidebar menu on click of different webpage
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
 
+//turns on/off greyscale
 greyTog.addEventListener("change", function () {
   if (this.checked) {
     document.querySelector("#header").classList.add("grey");
