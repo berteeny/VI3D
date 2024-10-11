@@ -68,3 +68,13 @@ greyTog.addEventListener("change", function () {
     document.querySelector("#main").classList.remove("grey");
   }
 });
+
+// carousel automatic navigation
+let counter = 1;
+setInterval(() => {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 4000);

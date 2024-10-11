@@ -151,8 +151,6 @@ h2 {
     justify-content: center;
   }
 
-  
-
   .series {
     padding: 2rem 0rem;
     width: auto;
@@ -160,8 +158,9 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-
-  .m, .s, .r {
+  .m,
+  .s,
+  .r {
     align-items: center;
   }
 
@@ -181,8 +180,17 @@ h2 {
     font-size: 0.75rem;
   }
 
+  .hardwares {
+    gap: 2rem;
+  }
+
+  .hardwareR {
+    padding-bottom: 3rem;
+  }
+
   .hardwareR p {
     font-size: 0.85rem;
+    padding-top: 10px;
   }
 
   .hardwareL p {
@@ -194,7 +202,8 @@ h2 {
     padding-bottom: 0;
   }
 
-  .specs, .info {
+  .specs,
+  .info {
     height: fit-content;
     width: 300px;
   }
@@ -209,7 +218,9 @@ h2 {
     height: 225px;
   }
 
-  .r, .s, .m {
+  .r,
+  .s,
+  .m {
     height: fit-content;
   }
 
