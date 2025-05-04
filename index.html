@@ -22,76 +22,83 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/images/font/MyFontsWebfontsKit.css"
+      href="./assets/font/MyFontsWebfontsKit.css"
     />
   </head>
   <body>
     <header>
       <div class="container" id="header">
         <div class="container logo">
-          <a href="/"
+          <a href="../"
             ><img
               type="img"
               class="header-logo"
-              src="./assets/images/vi3dLogo.png"
+              src="../assets/images/vi3dLogo.png"
               alt="VI3D Labs logo"
           /></a>
         </div>
         <div role="menubar" class="container contact">
-          <div class="tooltip">
-            <span class="tooltiptext">Greyscale</span
-            ><input type="checkbox" id="unchecked" class="cbx hidden" />
-            <label for="unchecked" class="lbl"></label>
+          <div role="menitem" class="container fullNav">
+            <p>Products</p>
           </div>
-          <div role="menuitem" class="container" id="email">
-            <img
-              type="img"
-              class="icon"
-              src="./assets/images/envelope.svg"
-              alt="email icon"
-            /><a href="mailto:sales@vi3dlabs.com">sales@vi3dlabs.com</a>
+          <div role="menitem" class="container fullNav">
+            <p>Services</p>
           </div>
-          <div role="menuitem" class="container" id="number">
-            <img
-              type="img"
-              class="icon"
-              src="./assets/images/telephone.svg"
-              alt="telephone icon"
-            /><a>(778) 679-4089</a>
+          <div role="menitem" class="container fullNav">
+            <p>News</p>
+          </div>
+          <div role="menitem" class="container fullNav">
+            <p>About</p>
+          </div>
+          <div role="menitem" class="container fullNav">
+            <p>Careers</p>
           </div>
           <div class="container" id="menu">
             <ul role="menubar" class="menu robot container">
               <li role="presentation">
-                <a role="menuitem" class="menuItem" href="./">Home</a>
+                <a role="menuitem" class="menuItem" href="../">Home</a>
               </li>
               <li role="presentation">
-                <a role="menuitem" class="menuItem" href="./softwares"
-                  >Softwares</a
+                <a role="menuitem" class="menuItem" href="../products"
+                  >Products</a
                 >
               </li>
               <li role="presentation">
-                <a role="menuitem" class="menuItem" href="./hardwares"
-                  >Hardwares</a
+                <a role="menuitem" class="menuItem" href="../services"
+                  >Services</a
                 >
               </li>
               <li role="presentation">
-                <a role="menuitem" class="menuItem" href="./contact">Contact</a>
+                <a role="menuitem" class="menuItem" href="../news">News</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="../about">About</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" class="menuItem" href="../careers"
+                  >Careers</a
+                >
               </li>
             </ul>
-            <button type="button" class="hamburger">
-              <span class="menuIcon">See More</span>
-              <img
-                type="img"
-                class="closeIcon"
-                src="./assets/images/close.svg"
-                alt="menu open and close icon"
-              />
-            </button>
-            <div id="overlay"></div>
+            <div id="hamburgerMenu">
+              <button class="hamburger">
+                <span class="menuIcon"
+                  ><img
+                    src="../assets/images/hamburger.svg"
+                    alt="menu open icon"
+                /></span>
+                <img
+                  type="img"
+                  class="closeIcon"
+                  src="../assets/images/close.svg"
+                  alt="menu close icon"
+                />
+              </button>
+              <div id="overlay"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="layer"></div>
     </header>
     <div id="main">
       <div class="title container">
@@ -121,10 +128,14 @@
                 /></a>
               </div>
               <div class="slide">
-                <a href="/hardwares#r"> <img src="/assets/images/rSeries.jpg" alt="" /></a>
+                <a href="/hardwares#r">
+                  <img src="/assets/images/rSeries.jpg" alt=""
+                /></a>
               </div>
               <div class="slide">
-                <a href="/hardwares#s"> <img src="/assets/images/sSeries.jpeg" alt="" /></a>
+                <a href="/hardwares#s">
+                  <img src="/assets/images/sSeries.jpeg" alt=""
+                /></a>
               </div>
               <!-- automatic slide navigation -->
               <div class="navigation-auto">

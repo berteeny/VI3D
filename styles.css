@@ -56,18 +56,18 @@ h3 {
 
 img.header-logo {
   height: 4rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .contact {
-  width: 40rem;
-  justify-content: space-around;
+  width: 30rem;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-right: 2rem;
 }
 
-/* toggle switch */
+/* toggle switch
 
 .lbl {
   position: relative;
@@ -142,14 +142,18 @@ img.header-logo {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /* navbar */
+
+#hamburgerMenu, #menu {
+  display: none;
+}
 
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 1.7rem;
+  top: 1rem;
   right: 2rem;
   padding: 4px;
   border: none;
@@ -191,14 +195,9 @@ img.header-logo {
   transform: translateX(-0);
 }
 
-.menuIcon {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-size: 16px;
-  background-color: #ed1c24;
-  padding: 10px;
-  border-radius: 4px;
-}
+/* .menuIcon {
+  
+} */
 
 #overlay {
   position: fixed;
@@ -609,7 +608,7 @@ footer {
   }
 
   .contact {
-    width: 15rem;
+    width: rem;
   }
 
   .menuIcon {
@@ -665,17 +664,22 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  #hamburgerMenu, #menu {
+    display: inline-block;
+  }
+
   img.header-logo {
     margin-left: 1rem;
     height: 3rem;
   }
 
-  .contact {
-    width: 10rem;
+  .fullNav {
+    display: none;
   }
 
   .menu {
     width: 325px;
+    gap: 1rem;
   }
 
   .title {
