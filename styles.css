@@ -621,10 +621,12 @@ h2 {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #282828;
   height: 1rem;
   text-align: start;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   color: #fff;
   font-size: 0.75rem;
 }
