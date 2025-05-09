@@ -41,22 +41,40 @@
               alt="VI3D Labs logo"
           /></a>
         </div>
-        <div role="menubar" class="container contact">
-          <div role="menitem" class="container fullNav">
-            <p>Products</p>
-          </div>
-          <div role="menitem" class="container fullNav">
-            <p>Services</p>
-          </div>
-          <div role="menitem" class="container fullNav">
-            <a href="../news">News</a>
-          </div>
-          <div role="menitem" class="container fullNav">
-            <p>About</p>
-          </div>
-          <div role="menitem" class="container fullNav">
-            <a href="../careers">Careers</a>
-          </div>
+
+        <!-- navbar here -->
+        <ul class="navbarUL fullNav">
+          <li>
+            <a href="../products">Products &#9207;</a>
+            <ul class="dropdown">
+              <li><a href="../products/#3DScanners">3D Scanners</a></li>
+              <li><a href="../products/#laserSurveying">Laser Surveying</a></li>
+              <li><a href="../products/#software">Software</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="../services">Services &#9207;</a>
+            <ul class="dropdown">
+              <li><a href="../services/#engineering">Engineering</a></li>
+              <li><a href="../services/#algorithmDevelopment">Algorithm Development</a></li>
+              <li><a href="../services/#technicalSupport">Technical Support</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../news">News</a></li>
+
+          <li>
+            <a href="../about">About &#9207;</a>
+            <ul class="dropdown">
+              <li><a href="../about/#history">History</a></li>
+              <li><a href="../about/#experience">Experience</a></li>
+            </ul>
+          </li>
+          <li><a href="../careers">Careers</a></li>
+        </ul>
+      
+          <!-- mobile navbar -->
           <div class="container" id="menu">
             <ul role="menubar" class="menu robot container">
               <li role="presentation">
@@ -101,8 +119,9 @@
               <div id="overlay"></div>
             </div>
           </div>
+          <!--  -->
         </div>
-      </div>
+      <!-- </div> -->
     </header>
     <div id="main">
       <div class="hardwares container">

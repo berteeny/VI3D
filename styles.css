@@ -144,9 +144,60 @@ img.header-logo {
   opacity: 1;
 } */
 
+/* id's for navbar function */
+#laserSurveying,
+#software,
+#engineering,
+#algorithmDevelopment,
+#technicalSupport,
+#history,
+#experience {
+  scroll-margin-top: 100px;
+}
+
 /* navbar */
 
-#hamburgerMenu, #menu {
+.navbarUL {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.navbarUL li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbarUL li a {
+  display: block;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.navbarUL li ul.dropdown li {
+  display: block;
+}
+
+.navbarUL li ul.dropdown {
+  width: 100%;
+  background: #e8e3e3;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding: 10px 40px !important;
+}
+
+.navbarUL li a:hover {
+  background: #e8e3e3;
+}
+
+.navbarUL li:hover ul.dropdown {
+  display: block;
+  /* padding-right: 45px; */
+}
+
+#hamburgerMenu,
+#menu {
   display: none;
 }
 
@@ -664,7 +715,8 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  #hamburgerMenu, #menu {
+  #hamburgerMenu,
+  #menu {
     display: inline-block;
   }
 
