@@ -151,7 +151,10 @@ img.header-logo {
 #algorithmDevelopment,
 #technicalSupport,
 #history,
-#experience {
+#experience,
+#m,
+#s,
+#p {
   scroll-margin-top: 100px;
 }
 
@@ -599,6 +602,24 @@ h2 {
   color: #fff;
 }
 
+#contactFooter {
+  height: 180px;
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.95) 0, #420000 100%);
+  background-position: right;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#contactFooterRight a {
+  color: #fff;
+}
+
+#contactEmail a,
+#contactNumber a {
+  padding-left: 10px;
+}
+
 footer {
   background-color: #282828;
   height: 1rem;
@@ -608,7 +629,7 @@ footer {
   font-size: 0.75rem;
 }
 
-.contactPage {
+/* .contactPage {
   width: 100%;
   min-height: 600px;
   height: 100vh;
@@ -633,7 +654,7 @@ footer {
   color: #fff;
   font-size: 1.75rem;
   margin: 1.5rem;
-}
+} */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .hardwareL p {
