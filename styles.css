@@ -273,8 +273,7 @@ img.header-logo {
 /* title */
 .title {
   height: 35rem;
-  background-image: url("./assets/images/bckgrnd2.png");
-  background-size: 100% 100%;
+  background-color: #080808;
   color: #fff;
   flex-wrap: wrap;
   flex-direction: column;
@@ -468,6 +467,35 @@ h2 {
   font-weight: 600;
 }
 
+/* landing */
+.landing {
+  justify-content: center;
+  align-items: end;
+  height: 650px;
+  width: 100%;
+  background-image: url("./assets/images/landingBGGrey.png");
+  background-size: 100%;
+  color: #fff;
+}
+
+.landingBG {
+  padding-bottom: 60px;
+  height: 400px;
+  width: 60%;
+  background-image: url("./assets/images/landing3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .landingBGText {
+align-items: center;
+justify-content: center;
+} */
+
 /* con design */
 
 .conDesign {
@@ -629,6 +657,7 @@ footer {
   padding: 0.5rem 2rem;
   color: #fff;
   font-size: 0.75rem;
+  overflow: hidden;
 }
 
 /* .contactPage {
@@ -658,7 +687,17 @@ footer {
   margin: 1.5rem;
 } */
 
+@media (min-width: 1024px) and (max-width: 1200px) { 
+  .first {
+    padding-left: 4% !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  .first {
+    padding-left: 3%;
+  }
   .hardwareL p {
     margin-bottom: 2rem;
   }
@@ -670,6 +709,14 @@ footer {
   .navigation-auto,
   .navigation-manual {
     width: 100vw;
+  }
+
+.landingBG {
+  height: 200px;
+  }
+
+  .landing {
+    height: 400px;
   }
 }
 
@@ -698,7 +745,7 @@ footer {
   .visInspection,
   .conDesign,
   .customApp {
-    height: 65rem;
+    height: fit-content;
     gap: 0rem;
     flex-direction: column;
     align-items: center;
@@ -712,7 +759,7 @@ footer {
   .visP,
   .conLeft {
     width: 705px;
-    height: 325px;
+    margin-bottom: 10%;
     align-items: center;
     text-align: start;
     padding-right: 0;
@@ -776,6 +823,18 @@ footer {
 
   h2 {
     padding-top: 3rem;
+  }
+
+  .first {
+    padding-left: 2%;
+  }
+
+  .landing {
+    height: 300px;
+  }
+
+  .landingBG {
+    height: 100px;
   }
 
   .edge {
@@ -857,10 +916,15 @@ footer {
   }
 
   /* carousel */
+
+  .navigation-manual {
+    display: none;
+  }
+
   .navigation-manual,
   .navigation-auto {
     width: 100vw;
-    margin-top: -300px;
+    margin-top: 200px;
   }
 
   .visLeft {
@@ -869,5 +933,11 @@ footer {
 
   .slide img {
     margin-top: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2px;
+    height: 2rem;
   }
 }
