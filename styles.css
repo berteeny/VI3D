@@ -529,25 +529,25 @@ h2 {
 
 #nuclear {
   background-image: url("./assets/images/nuclear.jpg");
-  background-size: contain;
+  background-size: cover;
   border-radius: 10px;
 }
 
 #space {
   background-image: url("./assets/images/space.jpg");
-  background-size: contain;
+  background-size: cover;
   border-radius: 10px;
 }
 
 #aerospace {
   background-image: url("./assets/images/aerospace.jpg");
-  background-size: contain;
+  background-size: cover;
   border-radius: 10px;
 }
 
 #construction {
   background-image: url("./assets/images/construction.jpg");
-  background-size: contain;
+  background-size: cover;
   border-radius: 10px;
 }
 
