@@ -498,7 +498,12 @@ h2 {
   align-items: center;
 }
 
-.industryLeft, .industryRight {
+.industries p {
+  font-size: 1.5rem;
+}
+
+.industryLeft,
+.industryRight {
   gap: 2rem;
 }
 
@@ -546,10 +551,6 @@ h2 {
   border-radius: 10px;
 }
 
-
-
-
-
 /* con design */
 
 .conDesign {
@@ -587,6 +588,42 @@ h2 {
 .conImg2 {
   height: 9rem;
 }
+
+/* careers form */
+
+#careers {
+  height: 100vh;
+  padding: 200px 100px 0px 100px;
+  justify-content: center;
+  background-color: #d3d1d1;
+}
+
+#form {
+  height: fit-content;
+  width: 80%;
+  padding: 5rem;
+  border: 2px solid #ed1c24;
+  text-align: center;
+}
+
+#form button {
+  background-color: #ed1c24;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+
+}
+
+#form a {
+  color: #fff;;
+}
+
+#form p {
+  font-size: 1.2rem;
+}
+
+
 
 /* custom applications */
 
@@ -905,6 +942,16 @@ footer {
     width: 95px;
     padding: 25px;
   }
+
+#careers {
+  padding: 150px 10px 0px 10px;
+  
+}
+
+#form {
+  padding: 2rem;
+}
+
   .edge {
     font-size: 0.95rem;
   }
