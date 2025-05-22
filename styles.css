@@ -551,9 +551,9 @@ h2 {
   border-radius: 10px;
 }
 
-
-/* news */
-.news {
+/* news & about */
+.news,
+.about {
   flex-direction: column;
   padding: 2rem;
   padding-top: 7rem;
@@ -564,7 +564,6 @@ h2 {
 .news h1 {
   font-size: 2rem;
 }
-
 
 /* con design */
 
@@ -627,18 +626,15 @@ h2 {
   color: #fff;
   border: none;
   border-radius: 10px;
-
 }
 
 #form a {
-  color: #fff;;
+  color: #fff;
 }
 
 #form p {
   font-size: 1.2rem;
 }
-
-
 
 /* custom applications */
 
@@ -958,14 +954,13 @@ footer {
     padding: 25px;
   }
 
-#careers {
-  padding: 150px 10px 0px 10px;
-  
-}
+  #careers {
+    padding: 150px 10px 0px 10px;
+  }
 
-#form {
-  padding: 2rem;
-}
+  #form {
+    padding: 2rem;
+  }
 
   .edge {
     font-size: 0.95rem;
