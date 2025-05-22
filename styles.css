@@ -551,6 +551,21 @@ h2 {
   border-radius: 10px;
 }
 
+
+/* news */
+.news {
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 7rem;
+  gap: 2rem;
+  background-color: #efecec;
+}
+
+.news h1 {
+  font-size: 2rem;
+}
+
+
 /* con design */
 
 .conDesign {
