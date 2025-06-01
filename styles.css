@@ -18,6 +18,10 @@ h3 {
   font-family: ITCHandelGothicHeavy;
 }
 
+.bold {
+  font-weight: bolder;
+}
+
 .icon {
   margin-right: 0.25rem;
 }
@@ -146,6 +150,7 @@ img.header-logo {
 
 /* id's for navbar function */
 #laserSurveying,
+#trackingSystem,
 #software,
 #engineering,
 #algorithmDevelopment,
@@ -194,7 +199,8 @@ img.header-logo {
   padding: 10px 40px !important;
 }
 
-.navbarUL li a:hover, .navbarUL li:hover {
+.navbarUL li a:hover,
+.navbarUL li:hover {
   background: #e8e3e3;
 }
 
@@ -831,6 +837,10 @@ footer {
 }
 
 @media screen and (max-width: 1230px) {
+  .tracking,
+  .target {
+    flex-direction: column;
+  }
   .h1,
   .edge {
     padding-left: 4rem;

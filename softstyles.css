@@ -6,6 +6,7 @@ body {
   width: 100%;
   height: 10rem;
   gap: 4rem;
+  background-color: #d0d0d0;
 }
 
 .softL {
@@ -22,7 +23,17 @@ body {
   margin: 0;
 }
 
-#edge {
+#laserSurveying, #trackingSystem, #software, .hardwares {
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tracking img, .target img {
+  width: 300px;
+}
+
+#edge, .red {
   color: #ed1c24;
 }
 
@@ -39,7 +50,7 @@ body {
 
 .softMain {
   width: 100%;
-  height: 55rem;
+  height: 50rem;
   background-color: #d0d0d0;
   gap: 5rem;
 }
@@ -64,6 +75,12 @@ body {
   background-image: url("./assets/images/vdarkr.png");
   background-repeat: no-repeat;
   background-size: 100rem;
+}
+
+.mainCol1 {
+  width: 50%;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .mainCol {
