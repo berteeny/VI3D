@@ -177,6 +177,10 @@ img.header-logo {
   text-decoration: none;
 }
 
+.navbarUL li p {
+  padding: 0rem 1rem;
+}
+
 .navbarUL li ul.dropdown li {
   display: block;
 }
@@ -190,7 +194,7 @@ img.header-logo {
   padding: 10px 40px !important;
 }
 
-.navbarUL li a:hover {
+.navbarUL li a:hover, .navbarUL li:hover {
   background: #e8e3e3;
 }
 
