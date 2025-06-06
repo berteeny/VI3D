@@ -726,6 +726,10 @@ h2 {
   width: 400px;
 }
 
+.service {
+  flex-direction: column;
+}
+
 /* contact us */
 
 .contactUsR {
