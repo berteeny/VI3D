@@ -18,6 +18,11 @@ h3 {
   font-family: ITCHandelGothicHeavy;
 }
 
+.bold {
+  font-weight: bolder;
+  color: black;
+}
+
 .icon {
   margin-right: 0.25rem;
 }
@@ -56,18 +61,18 @@ h3 {
 
 img.header-logo {
   height: 4rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .contact {
-  width: 40rem;
-  justify-content: space-around;
+  width: 30rem;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-right: 2rem;
 }
 
-/* toggle switch */
+/* toggle switch
 
 .lbl {
   position: relative;
@@ -142,14 +147,82 @@ img.header-logo {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+} */
+
+/* id's for navbar function */
+#laserSurveying,
+#trackingSystem,
+#software,
+#engineering,
+#algorithmDevelopment,
+#technicalSupport,
+#history,
+#experience,
+#m,
+#s,
+#p {
+  scroll-margin-top: 100px;
+}
+
+.tracking {
+  gap: 1rem;
 }
 
 /* navbar */
 
+.navbarUL {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.navbarUL li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbarUL li a {
+  display: block;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.navbarUL li p {
+  padding: 0rem 1rem;
+}
+
+.navbarUL li ul.dropdown li {
+  display: block;
+}
+
+.navbarUL li ul.dropdown {
+  width: 100%;
+  background: #e8e3e3;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding: 10px 40px !important;
+}
+
+.navbarUL li a:hover,
+.navbarUL li:hover {
+  background: #e8e3e3;
+}
+
+.navbarUL li:hover ul.dropdown {
+  display: block;
+  /* padding-right: 45px; */
+}
+
+#hamburgerMenu,
+#menu {
+  display: none;
+}
+
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 1.7rem;
+  top: 1rem;
   right: 2rem;
   padding: 4px;
   border: none;
@@ -191,14 +264,9 @@ img.header-logo {
   transform: translateX(-0);
 }
 
-.menuIcon {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-size: 16px;
-  background-color: #ed1c24;
-  padding: 10px;
-  border-radius: 4px;
-}
+/* .menuIcon {
+  
+} */
 
 #overlay {
   position: fixed;
@@ -220,8 +288,7 @@ img.header-logo {
 /* title */
 .title {
   height: 35rem;
-  background-image: url("./assets/images/bckgrnd2.png");
-  background-size: 100% 100%;
+  background-color: #080808;
   color: #fff;
   flex-wrap: wrap;
   flex-direction: column;
@@ -415,6 +482,110 @@ h2 {
   font-weight: 600;
 }
 
+/* landing */
+.landing {
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-image: url("./assets/images/landingBGGrey.png");
+  background-size: 100%;
+  color: #fff;
+}
+
+.landingBG {
+  padding-bottom: 30px;
+  height: 400px;
+  width: 60%;
+  background-image: url("./assets/images/landing3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* industry buttons */
+.industries {
+  flex-direction: column;
+  align-items: center;
+}
+
+.industries p {
+  font-size: 1.5rem;
+}
+
+.industryLeft,
+.industryRight {
+  gap: 2rem;
+}
+
+.industryButtons {
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+
+.industryButton {
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: solid 1px rgb(59, 57, 57);
+  color: #fff;
+}
+
+.industryButton:hover {
+  border-color: #fff;
+}
+
+#nuclear {
+  background-image: url("./assets/images/nuclear.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#space {
+  background-image: url("./assets/images/space.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#aerospace {
+  background-image: url("./assets/images/aerospace.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#construction {
+  background-image: url("./assets/images/construction.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#laserSurveying,
+#trackingSystem {
+  background-color: #f6f3f3;
+}
+
+/* news & about */
+.news,
+.about,
+.services {
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 7rem;
+  gap: 2rem;
+  background-color: #efecec;
+}
+
+.news h1 {
+  font-size: 2rem;
+}
+
 /* con design */
 
 .conDesign {
@@ -451,6 +622,49 @@ h2 {
 
 .conImg2 {
   height: 9rem;
+}
+
+/* 
+.linkedinWidget {
+  justify-content: space-between;
+}
+
+
+.linkedinWidget iframe {
+ height: 200px;
+} */
+
+/* careers form */
+
+#careers {
+  height: 100vh;
+  padding: 200px 100px 0px 100px;
+  justify-content: center;
+  background-color: #d3d1d1;
+}
+
+#form {
+  height: fit-content;
+  width: 80%;
+  padding: 5rem;
+  border: 2px solid #ed1c24;
+  text-align: center;
+}
+
+#form a {
+  background-color: #ed1c24;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#form a {
+  color: #fff;
+}
+
+#form p {
+  font-size: 1.2rem;
 }
 
 /* custom applications */
@@ -506,6 +720,12 @@ h2 {
   margin-top: 6rem;
 }
 
+#algorithmDevelopment img,
+#engineering img,
+#technicalSupport img {
+  width: 400px;
+}
+
 /* contact us */
 
 .contactUsR {
@@ -549,16 +769,37 @@ h2 {
   color: #fff;
 }
 
+#contactFooter {
+  height: 180px;
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.95) 0, #420000 100%);
+  background-position: right;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#contactFooterRight a {
+  color: #fff;
+}
+
+#contactEmail a,
+#contactNumber a {
+  padding-left: 10px;
+}
+
 footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #282828;
   height: 1rem;
   text-align: start;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   color: #fff;
   font-size: 0.75rem;
+  overflow: hidden;
 }
 
-.contactPage {
+/* .contactPage {
   width: 100%;
   min-height: 600px;
   height: 100vh;
@@ -583,9 +824,18 @@ footer {
   color: #fff;
   font-size: 1.75rem;
   margin: 1.5rem;
+} */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .first {
+    padding-left: 4% !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .first {
+    padding-left: 3%;
+  }
   .hardwareL p {
     margin-bottom: 2rem;
   }
@@ -598,9 +848,26 @@ footer {
   .navigation-manual {
     width: 100vw;
   }
+
+  .landingBG {
+    height: 200px;
+    margin-top: 150px;
+  }
+
+  .landing {
+    height: fit-content;
+  }
+
+  .industryButtons {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1230px) {
+  .tracking,
+  .target {
+    flex-direction: column;
+  }
   .h1,
   .edge {
     padding-left: 4rem;
@@ -608,9 +875,9 @@ footer {
     justify-content: flex-start;
   }
 
-  .contact {
-    width: 15rem;
-  }
+  /* .contact {
+    width: rem;
+  } */
 
   .menuIcon {
     padding-right: 15px;
@@ -625,7 +892,7 @@ footer {
   .visInspection,
   .conDesign,
   .customApp {
-    height: 65rem;
+    height: fit-content;
     gap: 0rem;
     flex-direction: column;
     align-items: center;
@@ -639,7 +906,7 @@ footer {
   .visP,
   .conLeft {
     width: 705px;
-    height: 325px;
+    margin-bottom: 10%;
     align-items: center;
     text-align: start;
     padding-right: 0;
@@ -658,6 +925,12 @@ footer {
     margin-top: 2rem;
   }
 
+  .service {
+    gap: 2rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
   .contactPage {
     padding-left: 0;
     justify-content: center;
@@ -665,17 +938,23 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  #hamburgerMenu,
+  #menu {
+    display: inline-block;
+  }
+
   img.header-logo {
     margin-left: 1rem;
     height: 3rem;
   }
 
-  .contact {
-    width: 10rem;
+  .fullNav {
+    display: none;
   }
 
   .menu {
     width: 325px;
+    gap: 1rem;
   }
 
   .title {
@@ -697,6 +976,47 @@ footer {
 
   h2 {
     padding-top: 3rem;
+  }
+
+  .first {
+    padding-left: 2%;
+  }
+
+  .landing {
+    height: fit-content;
+  }
+
+  .landingBG {
+    height: 100px;
+    margin-top: 130px;
+  }
+
+.industries p {
+  padding-bottom: 1rem;
+}
+
+  .industryButtons {
+    flex-direction: column;
+  }
+
+  .industryButton {
+    font-size: 12px;
+    width: 95px;
+    padding: 25px;
+  }
+
+  #careers {
+    padding: 150px 10px 0px 10px;
+  }
+
+  #form {
+    padding: 2rem;
+  }
+
+  #algorithmDevelopment img,
+  #engineering img,
+  #technicalSupport img {
+    width: 300px;
   }
 
   .edge {
@@ -736,7 +1056,7 @@ footer {
 
   .visInspection,
   .conDesign {
-    height: 52rem;
+    height: fit-content;
   }
 
   .customApp {
@@ -778,10 +1098,15 @@ footer {
   }
 
   /* carousel */
+
+  .navigation-manual {
+    display: none;
+  }
+
   .navigation-manual,
   .navigation-auto {
     width: 100vw;
-    margin-top: -300px;
+    margin-top: 200px;
   }
 
   .visLeft {
@@ -790,5 +1115,11 @@ footer {
 
   .slide img {
     margin-top: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2px;
+    height: 2rem;
   }
 }
