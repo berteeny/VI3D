@@ -20,6 +20,7 @@ h3 {
 
 .bold {
   font-weight: bolder;
+  color: black;
 }
 
 .icon {
@@ -161,6 +162,10 @@ img.header-logo {
 #s,
 #p {
   scroll-margin-top: 100px;
+}
+
+.tracking {
+  gap: 1rem;
 }
 
 /* navbar */
@@ -561,9 +566,15 @@ h2 {
   border-radius: 10px;
 }
 
+#laserSurveying,
+#trackingSystem {
+  background-color: #f6f3f3;
+}
+
 /* news & about */
 .news,
-.about {
+.about,
+.services {
   flex-direction: column;
   padding: 2rem;
   padding-top: 7rem;
@@ -613,6 +624,16 @@ h2 {
   height: 9rem;
 }
 
+/* 
+.linkedinWidget {
+  justify-content: space-between;
+}
+
+
+.linkedinWidget iframe {
+ height: 200px;
+} */
+
 /* careers form */
 
 #careers {
@@ -630,7 +651,7 @@ h2 {
   text-align: center;
 }
 
-#form button {
+#form a {
   background-color: #ed1c24;
   padding: 15px 20px;
   color: #fff;
@@ -697,6 +718,12 @@ h2 {
 .customL h3 {
   font-weight: 300;
   margin-top: 6rem;
+}
+
+#algorithmDevelopment img,
+#engineering img,
+#technicalSupport img {
+  width: 400px;
 }
 
 /* contact us */
@@ -848,9 +875,9 @@ footer {
     justify-content: flex-start;
   }
 
-  .contact {
+  /* .contact {
     width: rem;
-  }
+  } */
 
   .menuIcon {
     padding-right: 15px;
@@ -896,6 +923,12 @@ footer {
   .nsg,
   .customL h3 {
     margin-top: 2rem;
+  }
+
+  .service {
+    gap: 2rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   .contactPage {
@@ -958,6 +991,10 @@ footer {
     margin-top: 130px;
   }
 
+.industries p {
+  padding-bottom: 1rem;
+}
+
   .industryButtons {
     flex-direction: column;
   }
@@ -974,6 +1011,12 @@ footer {
 
   #form {
     padding: 2rem;
+  }
+
+  #algorithmDevelopment img,
+  #engineering img,
+  #technicalSupport img {
+    width: 300px;
   }
 
   .edge {
